@@ -1,11 +1,15 @@
+require_relative 'player'
+
 class Game
 
-  def initialize(player1, player2)
-    @player1 = Player.new(player1)
-    @player2 = Player.new(player2)
+  attr_reader :player_1, :player_2
+
+  def initialize(player_1 = Player.new, player_2 = Player.new)
+    @player_1 = player_1
+    @player_2 = player_2
   end
 
-  def attack(other_player)
-    other_player.damage_received
+  def attack(player_2)
+    player_2.damage_received
   end
 end

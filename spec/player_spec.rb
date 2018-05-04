@@ -22,7 +22,6 @@ describe Player do
   end
 
   describe '#damage_received' do
-    # let(:game) { double :game, :player1,:player2}
     it 'reduces the hit points by damage amount' do
       allow(player1).to receive(:damage_received)
       game.attack(player2)
