@@ -33,5 +33,4 @@ class Battle < Sinatra::Base
     $game.attack($player_2)
     erb :attack
   end
-
 end
